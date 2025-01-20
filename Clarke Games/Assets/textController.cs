@@ -6,7 +6,7 @@ public class textController : MonoBehaviour
 {
     [SerializeField] TMP_Text textbox;
     [SerializeField] List<Dialog> dialog;
-
+    
     private int index = 0;
     public bool CanGoNext;
 
@@ -36,7 +36,7 @@ public class textController : MonoBehaviour
 
     public void NextLine()
     {
-        if (index >= dialog.Count)
+        if (index >= dialog.Count-1)
         {
             return;
         }
