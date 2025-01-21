@@ -18,7 +18,7 @@ public class AnimationCom : MonoBehaviour
         {
             firstClick = true;
             playAnim("Greet");
-            StartCoroutine(ResetWeightAfterDelay("Greet", 2f)); 
+            StartCoroutine(ResetWeightAfterDelay("Greet", 3f)); 
         }
     }
     
@@ -28,7 +28,7 @@ public class AnimationCom : MonoBehaviour
         {
             return;
         }
-        StartCoroutine(SetWeightSlowly(anim.GetLayerIndex(AnimName), .9f, .5f));
+        StartCoroutine(SetWeightSlowly(anim.GetLayerIndex(AnimName), .7f, .5f));
 
     }
 
